@@ -1,0 +1,4 @@
+baseURL = 'https://anro-systems.com/'
+languageCode = 'en-us'
+title = 'ANRO-Systems'
+theme = 'ananke'
