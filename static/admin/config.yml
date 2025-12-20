@@ -1,17 +1,41 @@
 backend:
   name: git-gateway
   branch: main
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}"'
+    update: 'Update {{collection}} "{{slug}}"'
+    delete: 'Delete {{collection}} "{{slug}}"'
+    uploadMedia: '[skip ci] Upload "{{path}}"'
+    deleteMedia: '[skip ci] Delete "{{path}}"'
 
-media_folder: "static/images"
-public_folder: "/images"
+# This enables the editorial workflow with draft/publish states
+publish_mode: editorial_workflow
 
+# Where uploaded images go
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+# The content types (collections) you can edit in the CMS
 collections:
   - name: "pages"
     label: "Pages"
-    files:
-      - label: "About"
-        name: "about"
-        file: "content/about.md"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+    label_singular: "Page"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", default: "" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "content/post"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
