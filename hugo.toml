@@ -2,3 +2,7 @@ baseURL = 'https://anro-systems.com/'
 languageCode = 'en-us'
 title = 'ANRO-Systems'
 theme = 'ananke'
+
+[params]
+  logo = "/images/logo-main.png"
+  favicon = "/images/logo-icon.png"
