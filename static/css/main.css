@@ -175,6 +175,9 @@ nav a:hover::after {
   position: relative;
   height: 600px;
   overflow: hidden;
+  width: 100vw;           /* Add this */
+  left: 50%;              /* Add this */
+  transform: translateX(-50%); /* Add this */
 }
 
 .slide {
@@ -193,10 +196,13 @@ nav a:hover::after {
 
 .slide-image {
   position: absolute;
-  width: 100%;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
   background-size: cover;
   background-position: center;
+  min-width: 100%;
 }
 
 .slide-content {
