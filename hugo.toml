@@ -1,8 +1,13 @@
-baseURL = 'https://anro-systems.com/'
-languageCode = 'en-us'
-title = 'ANRO-Systems'
-theme = 'ananke'
+baseURL = "https://www.anrosystems.com/"
+languageCode = "en-au"
+title = "ANRO Systems"
+
+enableRobotsTXT = true
 
 [params]
-  logo = "/images/logo-main.png"
-  favicon = "/images/logo-icon.png"
+  company = "ANRO Systems"
+  description = "Engineering, CAD, automation, and systems integration services."
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true

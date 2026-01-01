@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="hero">
+  <div>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
+  </div>
+</section>
+
+<section class="content">
+  {{ .Content }}
+</section>
+
+<section class="services-preview">
+  <div class="service-card">
+    <img src="/images/service-cad.png" alt="CAD design">
+    <h3>CAD & Documentation</h3>
+    <p>Precise, industry-standard technical drawings.</p>
+  </div>
+
+  <div class="service-card">
+    <img src="/images/service-systems.png" alt="Systems integration">
+    <h3>Systems Integration</h3>
+    <p>Reliable integration across systems.</p>
+  </div>
+
+  <div class="service-card">
+    <img src="/images/service-automation.png" alt="Automation">
+    <h3>Automation</h3>
+    <p>Robust automation solutions.</p>
+  </div>
+</section>
+{{ end }}
