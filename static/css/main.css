@@ -100,8 +100,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-md) 0;
   gap: var(--space-lg);
+  /* ADD THESE 3 LINES: */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
 }
 
 .logo a {
