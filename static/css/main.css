@@ -96,6 +96,12 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-inner {
   display: flex;
   justify-content: space-between;
