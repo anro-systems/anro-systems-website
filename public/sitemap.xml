@@ -24,6 +24,8 @@
   </url><url>
     <loc>http://localhost:1313/policies/</loc>
   </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+  </url><url>
     <loc>http://localhost:1313/services/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
