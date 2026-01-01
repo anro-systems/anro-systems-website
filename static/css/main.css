@@ -173,11 +173,11 @@ nav a:hover::after {
 /* --- HERO SLIDESHOW --- */
 .hero-slideshow {
   position: relative;
-  height: 600px;
+  height: 450px;  /* 75% of 600px */
   overflow: hidden;
-  width: 100vw;           /* Add this */
-  left: 50%;              /* Add this */
-  transform: translateX(-50%); /* Add this */
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slide {
@@ -266,12 +266,13 @@ nav a:hover::after {
 
 @media (max-width: 768px) {
   .hero-slideshow {
-    height: 500px;
+    height: 350px;  /* 75% of 500px */
   }
   
   .slide-content {
-    padding: 150px 1.5rem 0;
+    padding: 120px 1.5rem 0;  /* Adjust from 150px */
   }
+
   
   .slide-content h1 {
     font-size: 2.5rem;
@@ -720,3 +721,107 @@ article.content {
 .mb-2 { margin-bottom: var(--space-sm); }
 .mb-3 { margin-bottom: var(--space-md); }
 .mb-4 { margin-bottom: var(--space-lg); }
+
+/* --- CENTERED CONTENT GRIDS --- */
+.text-center {
+  text-align: center;
+}
+
+.services-grid, .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.service-item, .benefit-item {
+  background: var(--white);
+  padding: var(--space-xl);
+  border-radius: 12px;
+  border: 2px solid var(--gray-300);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.service-item:hover, .benefit-item:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  color: var(--accent-gold);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.benefit-item {
+  background: linear-gradient(135deg, var(--primary-burgundy), var(--primary-burgundy-dark));
+  color: var(--white);
+  border: none;
+}
+
+.benefit-item p {
+  color: var(--white);  /* Add this line */
+  opacity: 0.9;         /* Add this line */
+}
+
+.benefit-item h3 {
+  color: var(--white);
+}
+/* --- DROPDOWN NAV --- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  padding: var(--space-sm) 0;
+  min-width: 180px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(5px);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: var(--space-sm) var(--space-lg);
+  color: var(--gray-700);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.dropdown-menu a:hover {
+  background: var(--gray-100);
+  color: var(--primary-burgundy);
+}
+
+.dropdown-menu a::after {
+  display: none;
+}

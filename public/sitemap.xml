@@ -4,11 +4,25 @@
   <url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/careers/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/industries/</loc>
+  </url><url>
+    <loc>http://localhost:1313/initiate-work/</loc>
+  </url><url>
+    <loc>http://localhost:1313/investors/</loc>
+  </url><url>
+    <loc>http://localhost:1313/leadership/</loc>
+  </url><url>
+    <loc>http://localhost:1313/media/</loc>
+  </url><url>
+    <loc>http://localhost:1313/policies/</loc>
   </url><url>
     <loc>http://localhost:1313/services/</loc>
   </url><url>

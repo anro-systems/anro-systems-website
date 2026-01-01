@@ -1,40 +1,28 @@
 ---
 title: "Services"
-description: "Engineering, CAD, automation, and systems integration services."
+description: "Engineering, CAD, automation, and systems integration services"
 ---
 
 ## Professional Engineering Services
 
-ANRO Systems delivers technical services across the full lifecycle of engineering and automation projects.
+ANRO Systems delivers comprehensive technical services across the full project lifecycle.
 
----
-
-### CAD Design & Technical Documentation
-
-- 2D and 3D CAD modelling  
-- Technical drawings and schematics  
-- As-built documentation  
-
----
+### CAD & Technical Documentation
+- 2D and 3D CAD modelling
+- Technical drawings and schematics
+- As-built documentation and revisions
 
 ### Systems Integration
-
-- Hardware and software integration  
-- Control and monitoring systems  
-- Commissioning support  
-
----
+- Hardware and software integration
+- Control and monitoring systems
+- Commissioning and validation support
 
 ### Automation & Control
+- PLC and SCADA systems
+- Control logic programming
+- System upgrades and migrations
 
-- Automation architecture  
-- Control logic  
-- System upgrades  
-
----
-
-### Engineering & Technical Consulting
-
-- Design reviews  
-- Technical advice  
-- Feasibility studies  
+### Engineering Consulting
+- Design reviews and validation
+- Technical feasibility studies
+- Project oversight and management
