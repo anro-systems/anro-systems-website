@@ -30,5 +30,5 @@ For project enquiries, please get in touch.
 
 ---
 
-**Email:** enquiries@anrosystems.com  
+**Email:** info@anro-systems.com
 **Location:** Australia
