@@ -121,11 +121,10 @@
 /* Hero projects (if keeping hero-projects class) */
 .hero-projects {
   position: relative;
-  height: 600px;
-  overflow: hidden;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
+  /* height and overflow removed so slide content can expand and button won't be clipped */
 }
 .slide-image {
   background-color: var(--primary-burgundy); /* Fallback color if image missing */

@@ -78,7 +78,7 @@
 .project-card {
   background: var(--white);
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible; /* changed from hidden so actions/buttons won't be clipped */
   border: 2px solid var(--gray-300);
   transition: all var(--transition-base);
   text-decoration: none;
