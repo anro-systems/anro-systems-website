@@ -124,13 +124,63 @@
 }
 
 /* Leader cards */
+/* Leadership grid (add near other card/grid styles) */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row on desktop */
+  gap: var(--space-xl);                    /* wider spacing between cards */
+  margin: var(--space-3xl) 0;
+  align-items: start;
+}
+
+/* Make leader cards consistent and vertically balanced */
+/* Leadership layout: wider centered row and evenly spaced cards */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns across on desktop */
+  gap: var(--space-3xl);                   /* bigger horizontal spacing */
+  max-width: 1400px;                       /* allow the grid to be wider on large screens */
+  margin: 0 auto;                          /* center the grid within the page */
+  padding: 0 var(--space-md);              /* keep small side padding */
+  align-items: start;
+}
+
+/* Keep cards compact (remove forced height) and avoid making them taller */
 .leader-card {
   background: var(--white);
   border-radius: 12px;
-  padding: var(--space-lg);
+  padding: var(--space-md); /* slightly smaller padding so cards don't grow */
   text-align: center;
   border: 2px solid var(--gray-300);
   transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  min-height: 0;    /* ensure cards size to content (not taller than needed) */
+}
+
+/* Smaller avatar keeps layout lighter without increasing card height */
+.leader-card img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--space-md);
+}
+
+/* Responsive: fewer columns on smaller screens (existing breakpoints still apply) */
+@media (max-width: 1024px) {
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+  }
+}
+@media (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
 }
 
 .leader-card:hover {
@@ -139,14 +189,6 @@
   box-shadow: var(--shadow-lg);
 }
 
-.leader-card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto var(--space-md);
-  border: 4px solid var(--accent-gold);
-}
 
 .leader-card h3 {
   color: var(--primary-burgundy);

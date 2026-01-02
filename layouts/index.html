@@ -12,7 +12,9 @@
       <div class="slide">
         <div class="slide-image" style="background-image: url('{{ .Params.featured_image }}'); background-color: #7d1f3e;">
           <!-- Fallback if image missing -->
-          <div style="color: white; padding: 20px;">Image: {{ .Params.featured_image }}</div>
+          {{ if not .Params.featured_image }}
+  <div class="image-fallback" style="color: white; padding: 20px;">No image available</div>
+{{ end }}
         </div>
         <div class="slide-content">
           <h1>{{ .Title }}</h1>

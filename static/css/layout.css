@@ -40,11 +40,25 @@
   margin: var(--space-3xl) 0;
 }
 
+/* Leadership grid — each card is at least 260px wide, so cards stay wider */
 .leadership-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
-  margin: var(--space-2xl) 0;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;            /* space between cards */
+  max-width: 1400px;      /* overall width of the grid area */
+  width: 100%;
+  margin: 0 auto;         /* center the grid */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+/* Tweak for smaller screens if needed */
+@media (max-width: 1024px) {
+  .leadership-grid { gap: 1.75rem; }
+}
+@media (max-width: 768px) {
+  .leadership-grid { gap: 1rem; padding: 1rem; }
 }
 
 .services-grid,

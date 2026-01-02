@@ -173,8 +173,8 @@ nav a:hover::after {
 /* --- HERO SLIDESHOW --- */
 .hero-slideshow {
   position: relative;
-  height: 450px;  /* 75% of 600px */
-  overflow: hidden;
+  min-height: 650px; /* allow the slide content + button to fit — tweak if needed */
+  overflow: visible;  /* don't clip buttons/actions */
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
