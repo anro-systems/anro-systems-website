@@ -6,6 +6,49 @@
     <description>Recent content in Engineering &amp; Technical Systems on ANRO Systems</description>
     <generator>Hugo</generator>
     <language>en-au</language>
+    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wind Farm Monitoring Systems</title>
+      <link>http://localhost:1313/projects/wind-farms/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wind-farms/</guid>
+      <description>Wind farm monitoring and control systems integration</description>
+    </item>
+    <item>
+      <title>Lithium Mining Process Control</title>
+      <link>http://localhost:1313/projects/lithium-mining/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/lithium-mining/</guid>
+      <description>Mining process automation and control systems for lithium extraction</description>
+    </item>
+    <item>
+      <title>Recycling Facility Automation</title>
+      <link>http://localhost:1313/projects/recycling-facility/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/recycling-facility/</guid>
+      <description>Automated sorting and processing system design for recycling facility</description>
+    </item>
+    <item>
+      <title>Prefabricated Housing Systems</title>
+      <link>http://localhost:1313/projects/prefab-housing/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/prefab-housing/</guid>
+      <description>Modular housing systems design and manufacturing integration</description>
+    </item>
+    <item>
+      <title>Wastewater Treatment Automation</title>
+      <link>http://localhost:1313/projects/wastewater-engineering/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wastewater-engineering/</guid>
+      <description>Advanced wastewater treatment plant automation and control systems</description>
+    </item>
+    <item>
+      <title>Helicopter Design &amp; Engineering</title>
+      <link>http://localhost:1313/projects/helicopter-design/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/helicopter-design/</guid>
+      <description>Advanced helicopter systems design and integration for next-generation aircraft</description>
+    </item>
   </channel>
 </rss>

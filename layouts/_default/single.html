@@ -6,17 +6,17 @@
 </section>
 
 <article class="content">
-  <div class="container">
+  <div class="container text-center">
     {{ .Content }}
   </div>
 </article>
 
-{{ if eq .Title "Contact" }}
+{{ if eq .Title "Enquiries" }}
 <section class="content" style="background: var(--bg-light); padding-top: 0;">
-  <div class="container" style="text-align: center;">
-    <p style="font-size: 1.2rem; color: var(--gray-700); max-width: 600px; margin: 0 auto var(--space-2xl);">
-      Have a project in mind? We'd love to hear from you. Fill out the form below or reach out directly.
-    </p>
+  <div class="container">
+    <div class="form-container">
+      <!-- Form will be centered by the container -->
+    </div>
   </div>
 </section>
 {{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="page-projects">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </header>
+
+  <section class="projects-grid-full">
+    {{ range where .Site.RegularPages "Section" "projects" }}
+      {{ if ne .Kind "section" }}
+        <a href="{{ .RelPermalink }}" class="project-card">
+          <img src="{{ .Params.featured_image | default "/images/project-placeholder.png" }}" alt="{{ .Title }}">
+          <div class="project-info">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.summary | default "Engineering project case study" }}</p>
+            {{ with .Params.services }}
+              <span class="project-tags">{{ delimit . " • " }}</span>
+            {{ end }}
+          </div>
+        </a>
+      {{ end }}
+    {{ end }}
+  </section>
+</article>
+{{ end }}

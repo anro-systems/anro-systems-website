@@ -1,0 +1,63 @@
+/* --- CONTAINER & GRID SYSTEMS --- */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--space-2xl);
+  }
+}
+
+/* Content sections */
+.content {
+  padding: var(--space-3xl) 0;
+  background: var(--white);
+}
+
+.content:nth-of-type(even) {
+  background: var(--bg-light);
+}
+
+/* Grid layouts */
+.services-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+  padding: var(--space-3xl) var(--space-2xl);
+  max-width: 1600px;
+  margin: 0 auto;
+  background: var(--bg-medium);
+}
+
+.projects-grid,
+.projects-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-3xl) 0;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin: var(--space-2xl) 0;
+}
+
+.services-grid,
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: var(--space-2xl);
+  margin: var(--space-3xl) 0;
+}
