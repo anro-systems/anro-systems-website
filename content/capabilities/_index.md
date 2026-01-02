@@ -1,6 +1,6 @@
 ---
-title: "Services"
-description: "Engineering, CAD, automation, and systems integration services"
+title: "Capabilities"
+description: "Services and industries we serve"
 ---
 
 ## Professional Engineering Services
@@ -26,3 +26,24 @@ ANRO Systems delivers comprehensive technical services across the full project l
 - Design reviews and validation
 - Technical feasibility studies
 - Project oversight and management
+
+---
+
+## Industry Expertise
+
+We deliver engineering solutions across multiple sectors with specialized understanding.
+
+### Industrial & Manufacturing
+- Process automation
+- Production line integration
+- Facility upgrades
+
+### Commercial & Infrastructure
+- Building management systems
+- Utility and infrastructure
+- Commercial developments
+
+### Resources & Energy
+- Control system integration
+- Monitoring and data acquisition
+- Safety and compliance systems

@@ -28,23 +28,19 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/careers/</loc>
+    <loc>http://localhost:1313/capabilities/</loc>
+  </url><url>
+    <loc>http://localhost:1313/contact/careers/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/enquiries/</loc>
+    <loc>http://localhost:1313/contact/enquiries/</loc>
   </url><url>
-    <loc>http://localhost:1313/industries/</loc>
+    <loc>http://localhost:1313/about/management/</loc>
   </url><url>
-    <loc>http://localhost:1313/investors/</loc>
-  </url><url>
-    <loc>http://localhost:1313/media/</loc>
-  </url><url>
-    <loc>http://localhost:1313/policies/</loc>
-  </url><url>
-    <loc>http://localhost:1313/services/</loc>
+    <loc>http://localhost:1313/about/policies/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
