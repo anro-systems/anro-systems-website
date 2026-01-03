@@ -1140,3 +1140,85 @@ article.content {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--space-xl);
 }
+
+/* --- PROJECT PAGES: full-bleed / wider content --- */
+/* Place this at the end of pages.css to override site container limits for project pages */
+
+.project-hero,
+.project-content {
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: var(--space-3xl) 2rem;
+  margin: 0; /* ensure no extra margins */
+}
+
+/* Use a two-column layout where the main content is wide */
+.project-content {
+  display: grid;
+  grid-template-columns: 320px 1fr; /* left sidebar (320px) and wide main content */
+  gap: var(--space-2xl);
+  align-items: start;
+  max-width: 1800px; /* cap very large monitors */
+  margin: 0 auto; /* center within viewport width */
+}
+
+/* Let article and project body expand to fill the wide column */
+.project-content article,
+.project-body,
+article.content {
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Keep the sidebar compact and in normal flow */
+.project-sidebar {
+  width: 320px;
+  max-width: 320px;
+  position: static;
+  margin: 0;
+  padding: var(--space-xl);
+  box-sizing: border-box;
+}
+
+/* Avoid forcing taller cards; make content size to text */
+.project-body {
+  padding: 0;
+}
+
+/* Images and media inside project body should be responsive */
+.project-body img,
+.project-body figure,
+.project-body video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Small screens: single column */
+@media (max-width: 1024px) {
+  .project-content {
+    grid-template-columns: 1fr; /* stack */
+    padding: var(--space-2xl);
+  }
+  .project-sidebar {
+    width: 100%;
+    max-width: 100%;
+    padding: var(--space-lg);
+  }
+  .project-hero,
+  .project-content {
+    padding: var(--space-2xl) 1.25rem;
+  }
+}
+
+/* Prevent horizontal scroll caused by 100vw + padding on some browsers */
+html, body {
+  overflow-x: hidden;
+}

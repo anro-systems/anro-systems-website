@@ -10,7 +10,7 @@ featured_image: "/images/projects/lithium-mining/cover.png"
 summary: "Mining process automation and control systems for lithium extraction"
 ---
 
-![Lithium Mining](/images/projects/lithium-mining/cover.png)
+![Lithium Mining](/images/projects/lithium-mining/cover1.png)
 
 ## Project Overview
 Automation and control system design for lithium extraction and processing facility, focusing on process optimization and safety systems.
